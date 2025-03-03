@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const router = express.Router();
 const pool = require('../database');
@@ -8,7 +10,7 @@ function authenticateToken(req, res, next) {
   const token = authHeader && authHeader.split(' ')[1];
   if (token == null) return res.sendStatus(401);
 
-  jwt.verify(token, 'your_secret_key', (err, user) => {
+  jwt.verify(token, process.env.SECRET_KEY, (err, user) => {
     if (err) return res.sendStatus(403);
     req.user = user;
     next();
