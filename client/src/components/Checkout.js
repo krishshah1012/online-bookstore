@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Checkout() {
-  // Placeholder for payment gateway integration
+  // payment gateway integration remaining.
   return (
     <div>
       <h2>Checkout</h2>
