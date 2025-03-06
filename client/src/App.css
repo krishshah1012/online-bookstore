@@ -56,11 +56,11 @@ nav button:hover {
 }
 
 .product-card {
-  width: calc(50% - 12.5px); /* Two cards per line, with gap */
-  aspect-ratio: 1 / 1; /* Make it a square */
-  display: inline-block; /* Allows width to be set and respects margins */
-  vertical-align: top; /* Aligns cards to the top */
-  margin: 12.5px; /* Adds spacing around the cards */
+  width: calc(50% - 12.5px); 
+  aspect-ratio: 1 / 1; 
+  display: inline-block; 
+  vertical-align: top; 
+  margin: 12.5px; 
   background-color: #1e1e1e;
   border-radius: 8px;
   padding: 20px;
